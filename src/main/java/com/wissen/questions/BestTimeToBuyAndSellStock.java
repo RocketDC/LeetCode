@@ -14,6 +14,18 @@ public class BestTimeToBuyAndSellStock {
      * @return Maximum profit that can be achieved
      */
     public int maxProfit(int[] prices) {
+        int maxprofit = 0;
+        int bestTimeToBuy = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if(prices[i] < prices[bestTimeToBuy])
+                bestTimeToBuy = i;
+            maxprofit = Math.max(maxprofit,prices[i] - prices[bestTimeToBuy]);
+        }
+        return maxprofit;
+    }
+
+
+    public int method1(int[] prices) {
         int buy = 0;
         int maxProfit = 0;
 

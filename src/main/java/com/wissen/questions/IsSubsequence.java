@@ -33,6 +33,19 @@ public class IsSubsequence {
      * @return true if s is a subsequence of t, false otherwise
      */
     public boolean isSubsequence(String s, String t) {
+        int j = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if(s.charAt(i) == t.charAt(j))
+                j++;
+
+        }
+        return j ==t.length();
+    }
+
+
+
+    public boolean method1(String s, String t) {
         int j=0;
         for (int i = 0; i < t.length()&&j<s.length(); i++) {
             if(t.charAt(i) ==s.charAt(j)){

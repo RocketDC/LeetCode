@@ -38,39 +38,7 @@ public class ValidPalindrome {
         throw new UnsupportedOperationException("Is palindrome logic is not added");
     }
 
-/* <<<<<<<<<<<<<<  ✨ Windsurf Command ⭐ >>>>>>>>>>>>>>>> */
-    /**
-     * Checks if the given string is a palindrome after removing non-alphanumeric characters
-     * and converting to lowercase.
-     * <p>
-     * This method iterates over the given string from both ends, removing non-alphanumeric
-     * characters and compares the characters at the corresponding positions. If any pair
-     * of characters is not equal, it returns false.
-     * <p>
-     * Example 1:
-     * Input: s = "A man, a plan, a canal: Panama"
-     * Output: true
-     * Explanation: "amanaplanacanalpanama" is a palindrome.
-     * <p>
-     * Example 2:
-     * Input: s = "race a car"
-     * Output: false
-     * Explanation: "raceacar" is not a palindrome.
-     * <p>
-     * Example 3:
-     * Input: s = " "
-     * Output: true
-     * Explanation: s is an empty string "" after removing non-alphanumeric characters.
-     * Since an empty string reads the same forward and backward, it is a palindrome.
-     * <p>
-     * Constraints:
-     * 1 <= s.length <= 2 * 105
-     * s consists only of printable ASCII characters.
-     *
-     * @param s Input string to check
-     * @return true if s is a palindrome, false otherwise
-     */
-/* <<<<<<<<<<  ef0785d0-7082-474e-8957-73a60237dd04  >>>>>>>>>>> */
+
     public boolean method(String s) {
         int i = 0;
         int j = s.length() - 1;
